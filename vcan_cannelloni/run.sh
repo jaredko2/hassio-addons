@@ -1,50 +1,47 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bashio
+# ^^^ Using bashio shebang
+
 set -e # Exit immediately if a command exits with a non-zero status.
 
-# Bashio is a helper library for Home Assistant add-ons
-if [ -f /usr/bin/bashio ]; then
-    # shellcheck source=/dev/null
-    source /usr/bin/bashio
-else
-    echo "Error: bashio not found. Make sure the base image includes it."
-    exit 1
-fi
+bashio::log.info "VCAN Cannelloni Add-on starting..."
 
-echo "VCAN Cannelloni Add-on starting..."
+# Directory where the binary and its libraries were copied inside the container
+BIN_DIR="/app/bin"
+CANNELLONI_BIN="${BIN_DIR}/cannelloni"
 
-# Read configuration options using bashio
-REMOTE_IP=$(bashio::config 'remote_ip')
-LOCAL_CAN_IF=$(bashio::config 'local_can_interface')
-# Define the path to the binary inside the container (mapped from host:/share)
-CANNELLONI_BIN="/share/cannelloni_bin/cannelloni" # Adjust 'cannelloni_bin' if you used a different subfolder name
-
-bashio::log.info "Using Remote IP: ${REMOTE_IP}"
-bashio::log.info "Using Local CAN Interface: ${LOCAL_CAN_IF}"
 bashio::log.info "Expecting cannelloni binary at: ${CANNELLONI_BIN}"
+bashio::log.info "Setting library path to: ${BIN_DIR}"
 
-# Check if the binary exists and is executable
-if [ ! -x "${CANNELLONI_BIN}" ]; then
-    bashio::log.fatal "Cannelloni binary not found or not executable at ${CANNELLONI_BIN}. Please ensure it's placed in the host's /share/cannelloni_bin/ directory and has execute permissions (chmod +x)."
-    exit 1
-fi
+# --- Set Library Path ---
+# Prepend the internal binary directory to the library search path
+export LD_LIBRARY_PATH="${BIN_DIR}:${LD_LIBRARY_PATH:-}"
 
 # --- Setup vcan0 ---
 bashio::log.info "Attempting to create vcan0 interface..."
 if ip link show vcan0 > /dev/null 2>&1; then
     bashio::log.warning "vcan0 already exists. Skipping creation."
 else
-    ip link add name vcan0 type vcan || bashio::log.error "Failed to add vcan0"
+    if ip link add name vcan0 type vcan; then
+        bashio::log.info "Successfully added vcan0 interface."
+    else
+        bashio::log.error "Failed to add vcan0 interface."
+        # exit 1 # Optional: exit on failure
+    fi
 fi
 
 bashio::log.info "Bringing up vcan0 interface..."
-ip link set dev vcan0 up || bashio::log.error "Failed to bring up vcan0"
+if ip link set dev vcan0 up; then
+    bashio::log.info "Successfully brought up vcan0 interface."
+else
+    bashio::log.error "Failed to bring up vcan0 interface."
+    # exit 1 # Optional: exit on failure
+fi
 
 # --- Start Cannelloni ---
-bashio::log.info "Starting cannelloni from mapped directory..."
-# Execute cannelloni using its path inside the container's /share mount
-exec "${CANNELLONI_BIN}" -I "${LOCAL_CAN_IF}" -C c -R "${REMOTE_IP}"
+bashio::log.info "Starting cannelloni..."
+# Execute cannelloni from its internal path. LD_LIBRARY_PATH is inherited.
+exec "${CANNELLONI_BIN}" -I vcan0 -C c -R 192.168.13.220
 
-# This part of the script will only be reached if cannelloni exits
-bashio::log.warning "Cannelloni process exited."
-
-exit 0
+# This part is only reached if exec fails or cannelloni exits
+bashio::log.warning "Cannelloni process exited unexpectedly."
+exit 1

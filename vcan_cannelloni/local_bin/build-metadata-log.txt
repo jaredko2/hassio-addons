@@ -1,0 +1,649 @@
+Built with docker.io/dockcross/manylinux_2_28-x64:20240418-88c04a4
+
+lksctp-tools-1.0.19/.github/
+lksctp-tools-1.0.19/.github/pull_request_template.md
+lksctp-tools-1.0.19/.gitignore
+lksctp-tools-1.0.19/.travis.yml
+lksctp-tools-1.0.19/.travis/
+lksctp-tools-1.0.19/.travis/linux-build.sh
+lksctp-tools-1.0.19/.travis/linux-covscan.sh
+lksctp-tools-1.0.19/AUTHORS
+lksctp-tools-1.0.19/COPYING
+lksctp-tools-1.0.19/COPYING.lib
+lksctp-tools-1.0.19/ChangeLog
+lksctp-tools-1.0.19/INSTALL
+lksctp-tools-1.0.19/Makefile.am
+lksctp-tools-1.0.19/Makefile.dirs
+lksctp-tools-1.0.19/Makefile.rules
+lksctp-tools-1.0.19/Makefile.vars
+lksctp-tools-1.0.19/NEWS
+lksctp-tools-1.0.19/README
+lksctp-tools-1.0.19/ROADMAP
+lksctp-tools-1.0.19/bin/
+lksctp-tools-1.0.19/bin/.gitignore
+lksctp-tools-1.0.19/bin/Makefile.am
+lksctp-tools-1.0.19/bin/aaaa
+lksctp-tools-1.0.19/bootstrap
+lksctp-tools-1.0.19/configure.ac
+lksctp-tools-1.0.19/doc/
+lksctp-tools-1.0.19/doc/Makefile.am
+lksctp-tools-1.0.19/doc/draft-stewart-tsvwg-sctpipv6-00.txt
+lksctp-tools-1.0.19/doc/draft-stewart-tsvwg-sctpscore-01.txt
+lksctp-tools-1.0.19/doc/ols.sty
+lksctp-tools-1.0.19/doc/ols.tex
+lksctp-tools-1.0.19/doc/random_notes.txt
+lksctp-tools-1.0.19/doc/rfc2960.txt
+lksctp-tools-1.0.19/doc/rfc3257.txt
+lksctp-tools-1.0.19/doc/rfc3286.txt
+lksctp-tools-1.0.19/doc/rfc3309.txt
+lksctp-tools-1.0.19/doc/rfc3554.txt
+lksctp-tools-1.0.19/doc/rfc3758.txt
+lksctp-tools-1.0.19/doc/rfc3873.txt
+lksctp-tools-1.0.19/doc/rfc4460.txt
+lksctp-tools-1.0.19/doc/rfc4820.txt
+lksctp-tools-1.0.19/doc/rfc4895.txt
+lksctp-tools-1.0.19/doc/rfc4960.txt
+lksctp-tools-1.0.19/doc/rfc5061.txt
+lksctp-tools-1.0.19/doc/rfc5062.txt
+lksctp-tools-1.0.19/doc/rfc6458.txt
+lksctp-tools-1.0.19/doc/states.txt
+lksctp-tools-1.0.19/doc/style_guide.txt
+lksctp-tools-1.0.19/doc/template.c
+lksctp-tools-1.0.19/doc/what_we_were_doing.txt
+lksctp-tools-1.0.19/libsctp.pc.in
+lksctp-tools-1.0.19/lksctp-tools.spec.in
+lksctp-tools-1.0.19/m4/
+lksctp-tools-1.0.19/m4/.gitignore
+lksctp-tools-1.0.19/m4/sctp.m4
+lksctp-tools-1.0.19/man/
+lksctp-tools-1.0.19/man/Makefile.am
+lksctp-tools-1.0.19/man/sctp.7
+lksctp-tools-1.0.19/man/sctp_bindx.3
+lksctp-tools-1.0.19/man/sctp_connectx.3
+lksctp-tools-1.0.19/man/sctp_getladdrs.3
+lksctp-tools-1.0.19/man/sctp_getpaddrs.3
+lksctp-tools-1.0.19/man/sctp_opt_info.3
+lksctp-tools-1.0.19/man/sctp_peeloff.3
+lksctp-tools-1.0.19/man/sctp_recvmsg.3
+lksctp-tools-1.0.19/man/sctp_recvv.3
+lksctp-tools-1.0.19/man/sctp_send.3
+lksctp-tools-1.0.19/man/sctp_sendmsg.3
+lksctp-tools-1.0.19/man/sctp_sendv.3
+lksctp-tools-1.0.19/src/
+lksctp-tools-1.0.19/src/Makefile.am
+lksctp-tools-1.0.19/src/apps/
+lksctp-tools-1.0.19/src/apps/.gitignore
+lksctp-tools-1.0.19/src/apps/Makefile.am
+lksctp-tools-1.0.19/src/apps/bindx_test.c
+lksctp-tools-1.0.19/src/apps/myftp.c
+lksctp-tools-1.0.19/src/apps/nagle_rcv.c
+lksctp-tools-1.0.19/src/apps/nagle_snd.c
+lksctp-tools-1.0.19/src/apps/peel_client.c
+lksctp-tools-1.0.19/src/apps/peel_server.c
+lksctp-tools-1.0.19/src/apps/sctp_darn.c
+lksctp-tools-1.0.19/src/apps/sctp_darn.h
+lksctp-tools-1.0.19/src/apps/sctp_status.c
+lksctp-tools-1.0.19/src/apps/sctp_test.c
+lksctp-tools-1.0.19/src/apps/sctp_xconnect.c
+lksctp-tools-1.0.19/src/func_tests/
+lksctp-tools-1.0.19/src/func_tests/.gitignore
+lksctp-tools-1.0.19/src/func_tests/Makefile.am
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_accept_close.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_addrs.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_connect.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_connectx.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_events.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_initmsg_connect.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_nonblock.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_recvfrom.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_recvmsg.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_rtoinfo.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_send.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_sendmsg.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_sendto.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_shutdown.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_socket_bind_listen.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_sockopt.c
+lksctp-tools-1.0.19/src/func_tests/test_1_to_1_threads.c
+lksctp-tools-1.0.19/src/func_tests/test_assoc_abort.c
+lksctp-tools-1.0.19/src/func_tests/test_assoc_shutdown.c
+lksctp-tools-1.0.19/src/func_tests/test_autoclose.c
+lksctp-tools-1.0.19/src/func_tests/test_basic.c
+lksctp-tools-1.0.19/src/func_tests/test_connect.c
+lksctp-tools-1.0.19/src/func_tests/test_connectx.c
+lksctp-tools-1.0.19/src/func_tests/test_fragments.c
+lksctp-tools-1.0.19/src/func_tests/test_getname.c
+lksctp-tools-1.0.19/src/func_tests/test_inaddr_any.c
+lksctp-tools-1.0.19/src/func_tests/test_peeloff.c
+lksctp-tools-1.0.19/src/func_tests/test_recvmsg.c
+lksctp-tools-1.0.19/src/func_tests/test_sctp_sendrecvmsg.c
+lksctp-tools-1.0.19/src/func_tests/test_sctp_sendvrecvv.c
+lksctp-tools-1.0.19/src/func_tests/test_sockopt.c
+lksctp-tools-1.0.19/src/func_tests/test_tcp_style.c
+lksctp-tools-1.0.19/src/func_tests/test_timetolive.c
+lksctp-tools-1.0.19/src/include/
+lksctp-tools-1.0.19/src/include/Makefile.am
+lksctp-tools-1.0.19/src/include/netinet/
+lksctp-tools-1.0.19/src/include/netinet/Makefile.am
+lksctp-tools-1.0.19/src/include/netinet/sctp.h.in
+lksctp-tools-1.0.19/src/lib/
+lksctp-tools-1.0.19/src/lib/Makefile.am
+lksctp-tools-1.0.19/src/lib/Versions.map
+lksctp-tools-1.0.19/src/lib/addrs.c
+lksctp-tools-1.0.19/src/lib/bindx.c
+lksctp-tools-1.0.19/src/lib/connectx.c
+lksctp-tools-1.0.19/src/lib/opt_info.c
+lksctp-tools-1.0.19/src/lib/peeloff.c
+lksctp-tools-1.0.19/src/lib/recvmsg.c
+lksctp-tools-1.0.19/src/lib/sendmsg.c
+lksctp-tools-1.0.19/src/testlib/
+lksctp-tools-1.0.19/src/testlib/Makefile.am
+lksctp-tools-1.0.19/src/testlib/sctputil.c
+lksctp-tools-1.0.19/src/testlib/sctputil.h
+lksctp-tools-1.0.19/src/withsctp/
+lksctp-tools-1.0.19/src/withsctp/.gitignore
+lksctp-tools-1.0.19/src/withsctp/Makefile.am
+lksctp-tools-1.0.19/src/withsctp/README
+lksctp-tools-1.0.19/src/withsctp/checksctp.c
+lksctp-tools-1.0.19/src/withsctp/notes.txt
+lksctp-tools-1.0.19/src/withsctp/sctp_bind.c
+lksctp-tools-1.0.19/src/withsctp/sctp_load_libs.c
+lksctp-tools-1.0.19/src/withsctp/sctp_socket.c
+lksctp-tools-1.0.19/src/withsctp/sctp_socket.h
+lksctp-tools-1.0.19/src/withsctp/sctp_sockopt.c
+lksctp-tools-1.0.19/src/withsctp/withsctp.in
+lksctp-tools-1.0.19/stamp-h.in
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'bin'.
+libtoolize: copying file 'bin/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for gawk... (cached) gawk
+checking for gcc... /opt/rh/gcc-toolset-12/root/bin//gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether /opt/rh/gcc-toolset-12/root/bin//gcc accepts -g... yes
+checking for /opt/rh/gcc-toolset-12/root/bin//gcc option to enable C11 features... none needed
+checking whether /opt/rh/gcc-toolset-12/root/bin//gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of /opt/rh/gcc-toolset-12/root/bin//gcc... gcc3
+checking whether ln -s works... yes
+checking for library containing strerror... none required
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by /opt/rh/gcc-toolset-12/root/bin//gcc... /opt/rh/gcc-toolset-12/root/bin//ld
+checking if the linker (/opt/rh/gcc-toolset-12/root/bin//ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /opt/rh/gcc-toolset-12/root/usr/bin/nm -B
+checking the name lister (/opt/rh/gcc-toolset-12/root/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 3145728
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /opt/rh/gcc-toolset-12/root/bin//ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /opt/rh/gcc-toolset-12/root/usr/bin/nm -B output from /opt/rh/gcc-toolset-12/root/bin//gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for sys/time.h... yes
+checking for sys/select.h... yes
+checking for sys/socket.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if /opt/rh/gcc-toolset-12/root/bin//gcc supports -fno-rtti -fno-exceptions... no
+checking for /opt/rh/gcc-toolset-12/root/bin//gcc option to produce PIC... -fPIC -DPIC
+checking if /opt/rh/gcc-toolset-12/root/bin//gcc PIC flag -fPIC -DPIC works... yes
+checking if /opt/rh/gcc-toolset-12/root/bin//gcc static flag -static works... no
+checking if /opt/rh/gcc-toolset-12/root/bin//gcc supports -c -o file.o... yes
+checking if /opt/rh/gcc-toolset-12/root/bin//gcc supports -c -o file.o... (cached) yes
+checking whether the /opt/rh/gcc-toolset-12/root/bin//gcc linker (/opt/rh/gcc-toolset-12/root/bin//ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... no
+checking for dlopen in -ldl... yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... yes
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for egrep... (cached) /usr/bin/grep -E
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for arpa/inet.h... yes
+checking for fcntl.h... yes
+checking for malloc.h... yes
+checking for netdb.h... yes
+checking for netinet/in.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/ioctl.h... yes
+checking for sys/param.h... yes
+checking for sys/socket.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for linux/sctp.h... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for size_t... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for working volatile... yes
+checking for GNU libc compatible malloc... yes
+checking for working memcmp... yes
+checking for GNU libc compatible realloc... yes
+checking types of arguments for select... int,fd_set *,struct timeval *
+checking for vprintf... yes
+checking for bzero... yes
+checking for gethostbyname... yes
+checking for gettimeofday... yes
+checking for memmove... yes
+checking for memset... yes
+checking for select... yes
+checking for socket... yes
+checking for strchr... yes
+checking for strerror... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for struct sctp_event_subscribe.sctp_stream_reset_event... yes
+checking for /opt/rh/gcc-toolset-12/root/bin//gcc options needed to detect all undeclared functions... none needed
+checking whether SCTP_RECONFIG_SUPPORTED is declared... yes
+checking for sctp_peeloff_flags_arg_t... yes
+checking for struct sctp_pdapi_event.pdapi_stream... yes
+checking for struct sctp_pdapi_event.pdapi_seq... yes
+checking for struct sctp_prinfo... yes
+checking whether SCTP_AUTH_NO_AUTH is declared... yes
+checking for struct sctp_paddrparams.spp_ipv6_flowlabel... yes
+checking for struct sctp_paddrparams.spp_dscp... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating lksctp-tools.spec
+config.status: creating Makefile
+config.status: creating bin/Makefile
+config.status: creating man/Makefile
+config.status: creating src/Makefile
+config.status: creating src/apps/Makefile
+config.status: creating src/func_tests/Makefile
+config.status: creating src/include/Makefile
+config.status: creating src/include/netinet/Makefile
+config.status: creating src/lib/Makefile
+config.status: creating src/testlib/Makefile
+config.status: creating src/withsctp/Makefile
+config.status: creating doc/Makefile
+config.status: creating libsctp.pc
+config.status: creating config.h
+config.status: creating src/include/netinet/sctp.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/tmp/libsctp_build'
+Making all in man
+make[2]: Entering directory '/tmp/libsctp_build/man'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/tmp/libsctp_build/man'
+Making all in bin
+make[2]: Entering directory '/tmp/libsctp_build/bin'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/tmp/libsctp_build/bin'
+Making all in src
+make[2]: Entering directory '/tmp/libsctp_build/src'
+Making all in apps
+make[3]: Entering directory '/tmp/libsctp_build/src/apps'
+  CC       sctp_darn.o
+make -C ../../src/testlib libsctputil.la
+make[4]: Entering directory '/tmp/libsctp_build/src/testlib'
+  CC       sctputil.lo
+  CCLD     libsctputil.la
+make[4]: Leaving directory '/tmp/libsctp_build/src/testlib'
+make -C ../../src/lib libsctp.la
+make[4]: Entering directory '/tmp/libsctp_build/src/lib'
+  CC       bindx.lo
+  CC       connectx.lo
+  CC       peeloff.lo
+  CC       opt_info.lo
+  CC       addrs.lo
+  CC       sendmsg.lo
+  CC       recvmsg.lo
+  CCLD     libsctp.la
+make[4]: Leaving directory '/tmp/libsctp_build/src/lib'
+  CCLD     sctp_darn
+  CC       sctp_test.o
+  CCLD     sctp_test
+  CC       sctp_status.o
+  CCLD     sctp_status
+  CC       bindx_test.o
+  CCLD     bindx_test
+  CC       nagle_snd.o
+  CCLD     nagle_snd
+  CC       nagle_rcv.o
+  CCLD     nagle_rcv
+  CC       myftp.o
+  CCLD     myftp
+  CC       sctp_xconnect.o
+  CCLD     sctp_xconnect
+  CC       peel_server.o
+  CCLD     peel_server
+  CC       peel_client.o
+  CCLD     peel_client
+make[3]: Leaving directory '/tmp/libsctp_build/src/apps'
+Making all in include
+make[3]: Entering directory '/tmp/libsctp_build/src/include'
+Making all in netinet
+make[4]: Entering directory '/tmp/libsctp_build/src/include/netinet'
+make  all-am
+make[5]: Entering directory '/tmp/libsctp_build/src/include/netinet'
+make[5]: Leaving directory '/tmp/libsctp_build/src/include/netinet'
+make[4]: Leaving directory '/tmp/libsctp_build/src/include/netinet'
+make[4]: Entering directory '/tmp/libsctp_build/src/include'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/tmp/libsctp_build/src/include'
+make[3]: Leaving directory '/tmp/libsctp_build/src/include'
+Making all in lib
+make[3]: Entering directory '/tmp/libsctp_build/src/lib'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/tmp/libsctp_build/src/lib'
+Making all in testlib
+make[3]: Entering directory '/tmp/libsctp_build/src/testlib'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/tmp/libsctp_build/src/testlib'
+Making all in withsctp
+make[3]: Entering directory '/tmp/libsctp_build/src/withsctp'
+  CC       checksctp.o
+  CCLD     checksctp
+  CC       sctp_load_libs.lo
+  CC       sctp_socket.lo
+  CC       sctp_bind.lo
+  CC       sctp_sockopt.lo
+  CCLD     libwithsctp.la
+make[3]: Leaving directory '/tmp/libsctp_build/src/withsctp'
+Making all in func_tests
+make[3]: Entering directory '/tmp/libsctp_build/src/func_tests'
+  CC       test_assoc_abort.o
+  CCLD     test_assoc_abort
+  CC       test_assoc_shutdown.o
+  CCLD     test_assoc_shutdown
+  CC       test_autoclose.o
+  CCLD     test_autoclose
+  CC       test_basic.o
+  CCLD     test_basic
+  CC       test_fragments.o
+  CCLD     test_fragments
+  CC       test_inaddr_any.o
+  CCLD     test_inaddr_any
+  CC       test_peeloff.o
+  CCLD     test_peeloff
+  CC       test_sockopt.o
+  CCLD     test_sockopt
+  CC       test_connect.o
+  CCLD     test_connect
+  CC       test_connectx.o
+  CCLD     test_connectx
+  CC       test_recvmsg.o
+  CCLD     test_recvmsg
+  CC       test_timetolive.o
+  CCLD     test_timetolive
+  CC       test_sctp_sendrecvmsg.o
+  CCLD     test_sctp_sendrecvmsg
+  CC       test_getname.o
+  CCLD     test_getname
+  CC       test_tcp_style.o
+  CCLD     test_tcp_style
+  CC       test_1_to_1_socket_bind_listen.o
+  CCLD     test_1_to_1_socket_bind_listen
+  CC       test_1_to_1_accept_close.o
+  CCLD     test_1_to_1_accept_close
+  CC       test_1_to_1_connect.o
+  CCLD     test_1_to_1_connect
+  CC       test_1_to_1_connectx.o
+  CCLD     test_1_to_1_connectx
+  CC       test_1_to_1_send.o
+  CCLD     test_1_to_1_send
+  CC       test_1_to_1_sendto.o
+  CCLD     test_1_to_1_sendto
+  CC       test_1_to_1_sendmsg.o
+  CCLD     test_1_to_1_sendmsg
+  CC       test_1_to_1_recvfrom.o
+  CCLD     test_1_to_1_recvfrom
+  CC       test_1_to_1_recvmsg.o
+  CCLD     test_1_to_1_recvmsg
+  CC       test_1_to_1_shutdown.o
+  CCLD     test_1_to_1_shutdown
+  CC       test_1_to_1_sockopt.o
+  CCLD     test_1_to_1_sockopt
+  CC       test_1_to_1_addrs.o
+  CCLD     test_1_to_1_addrs
+  CC       test_1_to_1_nonblock.o
+  CCLD     test_1_to_1_nonblock
+  CC       test_1_to_1_rtoinfo.o
+  CCLD     test_1_to_1_rtoinfo
+  CC       test_1_to_1_events.o
+  CCLD     test_1_to_1_events
+  CC       test_1_to_1_threads.o
+  CCLD     test_1_to_1_threads
+  CC       test_1_to_1_initmsg_connect.o
+  CCLD     test_1_to_1_initmsg_connect
+  CC       test_sctp_sendvrecvv.o
+  CCLD     test_sctp_sendvrecvv
+  CC       test_basic_v6-test_basic.o
+  CCLD     test_basic_v6
+  CC       test_sockopt_v6-test_sockopt.o
+  CCLD     test_sockopt_v6
+  CC       test_fragments_v6-test_fragments.o
+  CCLD     test_fragments_v6
+  CC       test_inaddr_any_v6-test_inaddr_any.o
+  CCLD     test_inaddr_any_v6
+  CC       test_peeloff_v6-test_peeloff.o
+  CCLD     test_peeloff_v6
+  CC       test_timetolive_v6-test_timetolive.o
+  CCLD     test_timetolive_v6
+  CC       test_sctp_sendrecvmsg_v6-test_sctp_sendrecvmsg.o
+  CCLD     test_sctp_sendrecvmsg_v6
+  CC       test_getname_v6-test_getname.o
+  CCLD     test_getname_v6
+  CC       test_tcp_style_v6-test_tcp_style.o
+  CCLD     test_tcp_style_v6
+  CC       test_sctp_sendvrecvv_v6-test_sctp_sendvrecvv.o
+  CCLD     test_sctp_sendvrecvv_v6
+make[3]: Leaving directory '/tmp/libsctp_build/src/func_tests'
+make[3]: Entering directory '/tmp/libsctp_build/src'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/tmp/libsctp_build/src'
+make[2]: Leaving directory '/tmp/libsctp_build/src'
+Making all in doc
+make[2]: Entering directory '/tmp/libsctp_build/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/tmp/libsctp_build/doc'
+make[2]: Entering directory '/tmp/libsctp_build'
+make[2]: Leaving directory '/tmp/libsctp_build'
+make[1]: Leaving directory '/tmp/libsctp_build'
+./libsctp-1.0.19.tar.gz
+./libsctp.pc.in
+./src/testlib/libsctputil.la
+./src/testlib/.libs/libsctputil.la
+./src/testlib/.libs/libsctputil.a
+./src/lib/libsctp.la
+./src/lib/.libs/libsctp.la
+./src/lib/.libs/libsctp.so.1.0.19
+./src/lib/.libs/libsctp.so.1
+./src/lib/.libs/libsctp.lai
+./src/lib/.libs/libsctp.a
+./src/lib/.libs/libsctp.so
+./libsctp.pc
+./src/include/netinet/sctp.h
+Not a cross build. Architecture: 
+cannelloni-1.1.0/.github/
+cannelloni-1.1.0/.github/FUNDING.yml
+cannelloni-1.1.0/.github/release-drafter.yml
+cannelloni-1.1.0/.github/workflows/
+cannelloni-1.1.0/.github/workflows/nix-test.yml
+cannelloni-1.1.0/.github/workflows/release-drafter.yml
+cannelloni-1.1.0/.gitignore
+cannelloni-1.1.0/CMakeLists.txt
+cannelloni-1.1.0/README.md
+cannelloni-1.1.0/cannelloni.cpp
+cannelloni-1.1.0/cannelloni.h
+cannelloni-1.1.0/canthread.cpp
+cannelloni-1.1.0/canthread.h
+cannelloni-1.1.0/cmake/
+cannelloni-1.1.0/cmake/modules/
+cannelloni-1.1.0/cmake/modules/FindSCTP.cmake
+cannelloni-1.1.0/config.h.cmake
+cannelloni-1.1.0/connection.cpp
+cannelloni-1.1.0/connection.h
+cannelloni-1.1.0/csvmapparser.h
+cannelloni-1.1.0/decoder.cpp
+cannelloni-1.1.0/decoder.h
+cannelloni-1.1.0/default.nix
+cannelloni-1.1.0/doc/
+cannelloni-1.1.0/doc/firstexp.png
+cannelloni-1.1.0/doc/tcp_protocol.md
+cannelloni-1.1.0/doc/udp_format.md
+cannelloni-1.1.0/flake.lock
+cannelloni-1.1.0/flake.nix
+cannelloni-1.1.0/framebuffer.cpp
+cannelloni-1.1.0/framebuffer.h
+cannelloni-1.1.0/gpl-2.0.txt
+cannelloni-1.1.0/include/
+cannelloni-1.1.0/include/linux/
+cannelloni-1.1.0/include/linux/can.h
+cannelloni-1.1.0/include/linux/can/
+cannelloni-1.1.0/include/linux/can/bcm.h
+cannelloni-1.1.0/include/linux/can/error.h
+cannelloni-1.1.0/include/linux/can/gw.h
+cannelloni-1.1.0/include/linux/can/netlink.h
+cannelloni-1.1.0/include/linux/can/raw.h
+cannelloni-1.1.0/logging.h
+cannelloni-1.1.0/make_unique.h
+cannelloni-1.1.0/parser.cpp
+cannelloni-1.1.0/parser.h
+cannelloni-1.1.0/sctpthread.cpp
+cannelloni-1.1.0/sctpthread.h
+cannelloni-1.1.0/shell.nix
+cannelloni-1.1.0/tcp_client_thread.cpp
+cannelloni-1.1.0/tcp_server_thread.cpp
+cannelloni-1.1.0/tcpthread.cpp
+cannelloni-1.1.0/tcpthread.h
+cannelloni-1.1.0/tests/
+cannelloni-1.1.0/tests/candump_compare.py
+cannelloni-1.1.0/thread.cpp
+cannelloni-1.1.0/thread.h
+cannelloni-1.1.0/timer.cpp
+cannelloni-1.1.0/timer.h
+cannelloni-1.1.0/udpthread.cpp
+cannelloni-1.1.0/udpthread.h
+CMake Warning:
+  No source or binary directory provided.  Both will be assumed to be the
+  same as the current working directory, but note that this warning will
+  become a fatal error in future CMake releases.
+
+
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 12.1.1
+-- The CXX compiler identification is GNU 12.1.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/rh/gcc-toolset-12/root/bin//gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/rh/gcc-toolset-12/root/bin//g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found SCTP: /tmp/cannelloni_build  
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/cannelloni_build
+[  5%] Building CXX object CMakeFiles/sctpthread.dir/sctpthread.cpp.o
+In file included from /tmp/cannelloni_build/sctpthread.cpp:44:
+/tmp/cannelloni_build/sctpthread.h: In constructor ‘cannelloni::SCTPThread::SCTPThread(const cannelloni::debugOptions_t&, const sockaddr_in&, const sockaddr_in&, bool, bool, cannelloni::SCTPThreadRole)’:
+/tmp/cannelloni_build/sctpthread.h:58:20: warning: ‘cannelloni::SCTPThread::m_role’ will be initialized after [-Wreorder]
+   58 |     SCTPThreadRole m_role;
+      |                    ^~~~~~
+/tmp/cannelloni_build/sctpthread.h:54:10: warning:   ‘bool cannelloni::SCTPThread::m_checkPeerConnect’ [-Wreorder]
+   54 |     bool m_checkPeerConnect;
+      |          ^~~~~~~~~~~~~~~~~~
+/tmp/cannelloni_build/sctpthread.cpp:46:1: warning:   when initialized here [-Wreorder]
+   46 | SCTPThread::SCTPThread(const struct debugOptions_t &debugOptions,
+      | ^~~~~~~~~~
+[ 11%] Linking CXX static library libsctpthread.a
+[ 11%] Built target sctpthread
+[ 17%] Building CXX object CMakeFiles/addsources.dir/connection.cpp.o
+[ 23%] Building CXX object CMakeFiles/addsources.dir/framebuffer.cpp.o
+[ 29%] Building CXX object CMakeFiles/addsources.dir/thread.cpp.o
+[ 35%] Building CXX object CMakeFiles/addsources.dir/timer.cpp.o
+[ 41%] Building CXX object CMakeFiles/addsources.dir/udpthread.cpp.o
+[ 47%] Building CXX object CMakeFiles/addsources.dir/tcpthread.cpp.o
+[ 52%] Building CXX object CMakeFiles/addsources.dir/tcp_client_thread.cpp.o
+[ 58%] Building CXX object CMakeFiles/addsources.dir/tcp_server_thread.cpp.o
+[ 64%] Building CXX object CMakeFiles/addsources.dir/canthread.cpp.o
+[ 70%] Linking CXX static library libaddsources.a
+[ 70%] Built target addsources
+[ 76%] Building CXX object CMakeFiles/cannelloni-common.dir/parser.cpp.o
+[ 82%] Building CXX object CMakeFiles/cannelloni-common.dir/decoder.cpp.o
+[ 88%] Linking CXX shared library libcannelloni-common.so
+[ 88%] Built target cannelloni-common
+[ 94%] Building CXX object CMakeFiles/cannelloni.dir/cannelloni.cpp.o
+[100%] Linking CXX executable cannelloni
+[100%] Built target cannelloni
+Finished building cannelloni
+Not a cross build.
+ldd (GNU libc) 2.28
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Written by Roland McGrath and Ulrich Drepper.
+	linux-vdso.so.1 (0x00007ffc90bc6000)
+	libcannelloni-common.so.0 => /tmp/cannelloni_build/libcannelloni-common.so.0 (0x00007f041476e000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f0414328000)
+	libsctp.so.1 => /tmp/cannelloni_build/libsctp.so.1 (0x00007f0414764000)
+	libstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007f0413f93000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f0413c11000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f04139f9000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f0413633000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f0414548000)
