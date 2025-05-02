@@ -1,0 +1,24 @@
+# /addons/vcan_cannelloni/config.yaml
+name: "VCAN Cannelloni Bridge"
+version: "1.0.2" # Increment version
+slug: "vcan_cannelloni"
+description: "Sets up a vcan0 interface and runs cannelloni (from /share) to bridge CAN traffic."
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+init: false
+privileged:
+  - NET_ADMIN
+host_network: true
+# Map the host's /share directory into the container (read-only is safer if possible)
+map:
+  - share:ro # Mounts host:/share to container:/share
+options:
+  remote_ip: "192.168.13.220"
+  local_can_interface: "can0"
+schema:
+  remote_ip: "str"
+  local_can_interface: "str"
