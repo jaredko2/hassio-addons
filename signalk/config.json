@@ -22,6 +22,7 @@
     "SSLPORT": "3443",
     "TCPSTREAMPORT": "8375"
   },
+  "host_network": true,
   "image": "ghcr.io/alexbelgium/signalk-{arch}",
   "map": [
     "addon_config:rw"
